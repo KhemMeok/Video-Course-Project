@@ -1,0 +1,14 @@
+spring:
+  mvc:
+    path-match:
+      matching-strategy:  ant-path-matcher
+  datasource:
+    url: jdbc:postgresql://localhost:5432/video_course
+    username: postgres
+    password: 2002
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
